@@ -1,0 +1,40 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  
+  
+  // Metadata.xml XPath interface reference: path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagPaymentListener']"
+	// Metadata.xml XPath interface reference: path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagNFCListener']"
+	// Metadata.xml XPath interface reference: path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagLastTransactionListener']"
+	// Metadata.xml XPath interface reference: path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagIsActivatedListener']"
+	// Metadata.xml XPath interface reference: path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagInstallmentsListener']"
+	// Metadata.xml XPath interface reference: path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagActivationListener']"
+	// Metadata.xml XPath interface reference: path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagAbortListener']"
+
+  -->
+  <remove-node path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper']/class[@name='PlugPagNearFieldCardData']/method[@name='getSlots' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper']/class[@name='PlugPagNFCResult']/method[@name='getSlots' and count(parameter)=0]" />
+  <remove-node path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper']/class[@name='PlugPagNearFieldCardData']/method[@name='setSlots' and count(parameter)=1 and parameter[1][@type='java.util.HashMap&lt;java.lang.String, byte[]&gt;[]']]" />
+  <remove-node path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper']/class[@name='PlugPagNFCResult']/constructor[@name='PlugPagNFCResult' and count(parameter)=4 and parameter[1][@type='int'] and parameter[2][@type='int'] and parameter[3][@type='java.util.HashMap&lt;java.lang.String, byte[]&gt;[]'] and parameter[4][@type='int']]"  />
+  
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagAbortListener']/method[@name='onError']/parameter[@name='p0' and @type='string']" name="name">PlugPagAbortListenerP0</attr>
+
+
+  <!-- Renamed EventArgs for all necessary classes -->
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagAbortListener']/method[@name='onError']" name="argsType">PlugPagAbortListenerEventArgs</attr>
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagInstallmentsListener']/method[@name='onError']" name="argsType">PlugPagInstallmentsListenerEventArgs</attr>
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagIsActivatedListener']/method[@name='onError']" name="argsType">PlugPagIsActivatedListenerEventArgs</attr>
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagLastTransactionListener']/method[@name='onError']" name="argsType">PlugPagLastTransactionListenerEventArgs</attr>
+
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagPaymentListener']/method[@name='onError']" name="argsType">PlugPagPaymentListenerEventArgs</attr>
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagPaymentListener']/method[@name='onSuccess']" name="argsType">PlugPagPaymentListenerOnSuccessEventArgs</attr>
+ 
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagNFCListener']/method[@name='onError']" name="argsType">PlugPagNFCListenerEventArgs</attr>
+  <attr path="/api/package[@name='br.com.uol.pagseguro.plugpagservice.wrapper.listeners']/interface[@name='PlugPagNFCListener']/method[@name='onSuccess']" name="argsType">PlugPagNFCListeneronSuccessEventArgs</attr>
+ 
+
+</metadata>

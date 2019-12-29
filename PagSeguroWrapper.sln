@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PagSeguroWrapper", "PagSeguroWrapper.csproj", "{04F8411C-D927-4CF3-A67E-94AFFFC53FDB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App1", "..\App1\App1.csproj", "{7E88C7C0-B1BB-4865-BE1D-D4471EB2DCDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04F8411C-D927-4CF3-A67E-94AFFFC53FDB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F8411C-D927-4CF3-A67E-94AFFFC53FDB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F8411C-D927-4CF3-A67E-94AFFFC53FDB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F8411C-D927-4CF3-A67E-94AFFFC53FDB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E88C7C0-B1BB-4865-BE1D-D4471EB2DCDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E88C7C0-B1BB-4865-BE1D-D4471EB2DCDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E88C7C0-B1BB-4865-BE1D-D4471EB2DCDE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7E88C7C0-B1BB-4865-BE1D-D4471EB2DCDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E88C7C0-B1BB-4865-BE1D-D4471EB2DCDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E88C7C0-B1BB-4865-BE1D-D4471EB2DCDE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B97B5C1E-9F44-49BE-857B-3C6EE73C1B89}
+	EndGlobalSection
+EndGlobal
